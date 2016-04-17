@@ -7,6 +7,6 @@ def Sieve_of_Eratosthenes(n):
     for x in range(2, rn + 1):
         if sieve[x]:
             sieve[x*x:n+1:x] = [0] * len(sieve[x*x:n+1:x])
-    return filter(lambda x: not 0, sieve)
+    return filter(lambda x: x != 0, sieve)
 
 print sum(Sieve_of_Eratosthenes(2000000))
