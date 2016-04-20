@@ -1,6 +1,6 @@
 trees = list()
 
-with open('p018_triangle.txt') as f:
+with open('p067_triangle.txt') as f:
     for line in f:
         trees.append([int(i) for i in line.rstrip('\n').split(" ")])
 
